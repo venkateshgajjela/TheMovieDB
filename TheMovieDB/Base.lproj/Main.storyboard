@@ -66,12 +66,31 @@
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wei-xQ-DLT" customClass="CosmosView" customModule="TheMovieDB" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="70" width="276" height="35"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="35" id="vb0-QL-Xst"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="Rating"/>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                                            <real key="value" value="3"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                                            <integer key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
                                                             </subviews>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="wei-xQ-DLT" secondAttribute="trailing" id="8sA-dE-ZH8"/>
                                                                 <constraint firstAttribute="trailing" secondItem="3vB-Tw-Fmu" secondAttribute="trailing" id="FkB-7J-gJS"/>
+                                                                <constraint firstItem="wei-xQ-DLT" firstAttribute="leading" secondItem="WFx-bW-Mv0" secondAttribute="leading" id="Lpm-FX-sUl"/>
                                                                 <constraint firstAttribute="trailing" secondItem="hzV-tc-EPC" secondAttribute="trailing" id="MYi-Mu-4c2"/>
                                                                 <constraint firstItem="hzV-tc-EPC" firstAttribute="leading" secondItem="WFx-bW-Mv0" secondAttribute="leading" id="ZQz-3p-EBR"/>
+                                                                <constraint firstAttribute="bottom" secondItem="wei-xQ-DLT" secondAttribute="bottom" id="hta-5E-UZ2"/>
                                                                 <constraint firstItem="3vB-Tw-Fmu" firstAttribute="leading" secondItem="WFx-bW-Mv0" secondAttribute="leading" id="kbE-3V-y1x"/>
                                                                 <constraint firstItem="hzV-tc-EPC" firstAttribute="top" secondItem="3vB-Tw-Fmu" secondAttribute="bottom" constant="10" id="pzz-hS-xix"/>
                                                                 <constraint firstItem="3vB-Tw-Fmu" firstAttribute="top" secondItem="WFx-bW-Mv0" secondAttribute="top" id="wxi-wa-hcB"/>
@@ -101,6 +120,7 @@
                                             <outlet property="cellBgView" destination="bB6-Sw-TIw" id="NRm-eb-mRG"/>
                                             <outlet property="dateLbl" destination="hzV-tc-EPC" id="pKP-ra-YCZ"/>
                                             <outlet property="posterImage" destination="Abm-4E-pcF" id="hX0-Ly-Oap"/>
+                                            <outlet property="ratingView" destination="wei-xQ-DLT" id="Z02-on-egV"/>
                                             <outlet property="titleLbl" destination="3vB-Tw-Fmu" id="Cde-X3-sop"/>
                                         </connections>
                                     </tableViewCell>
@@ -193,14 +213,33 @@
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IcW-Yv-gEn" customClass="CosmosView" customModule="TheMovieDB" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="72" width="276" height="35"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="35" id="1iE-AR-kzK"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="Rating"/>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                                            <real key="value" value="3"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                                            <integer key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
                                                             </subviews>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
                                                                 <constraint firstItem="9MK-j5-DNc" firstAttribute="top" secondItem="PXr-ge-4CU" secondAttribute="bottom" constant="10" id="6nm-QA-O08"/>
                                                                 <constraint firstItem="PXr-ge-4CU" firstAttribute="top" secondItem="IMk-Cu-9a5" secondAttribute="top" id="8mg-QS-8UP"/>
+                                                                <constraint firstAttribute="trailing" secondItem="IcW-Yv-gEn" secondAttribute="trailing" id="Cdi-7w-iGa"/>
                                                                 <constraint firstAttribute="trailing" secondItem="9MK-j5-DNc" secondAttribute="trailing" id="F8e-qz-pmT"/>
+                                                                <constraint firstItem="IcW-Yv-gEn" firstAttribute="leading" secondItem="IMk-Cu-9a5" secondAttribute="leading" id="LMy-GC-kFJ"/>
                                                                 <constraint firstAttribute="trailing" secondItem="PXr-ge-4CU" secondAttribute="trailing" id="SNB-AK-b2H"/>
                                                                 <constraint firstItem="PXr-ge-4CU" firstAttribute="leading" secondItem="IMk-Cu-9a5" secondAttribute="leading" id="V2F-xT-Ody"/>
+                                                                <constraint firstAttribute="bottom" secondItem="IcW-Yv-gEn" secondAttribute="bottom" id="oY3-VB-ShN"/>
                                                                 <constraint firstItem="9MK-j5-DNc" firstAttribute="leading" secondItem="IMk-Cu-9a5" secondAttribute="leading" id="tQ4-mE-HSU"/>
                                                             </constraints>
                                                         </view>
@@ -227,6 +266,7 @@
                                         <connections>
                                             <outlet property="cellBgView" destination="RzY-3L-W5J" id="JBt-gd-crw"/>
                                             <outlet property="posterImage" destination="eAa-jA-p0c" id="bT2-9o-52a"/>
+                                            <outlet property="ratingStarsView" destination="IcW-Yv-gEn" id="zW6-W6-EGp"/>
                                             <outlet property="releseDateLbl" destination="9MK-j5-DNc" id="0vH-Pm-4DI"/>
                                             <outlet property="titleLbl" destination="PXr-ge-4CU" id="6Rh-9o-y3X"/>
                                         </connections>

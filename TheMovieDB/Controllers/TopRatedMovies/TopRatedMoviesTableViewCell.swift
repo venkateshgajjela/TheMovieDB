@@ -13,6 +13,7 @@ class TopRatedMoviesTableViewCell: UITableViewCell {
     @IBOutlet var posterImage: UIImageView!
     @IBOutlet var titleLbl: UILabel!
     @IBOutlet var dateLbl: UILabel!
+    @IBOutlet var ratingView: CosmosView!
     
     
     

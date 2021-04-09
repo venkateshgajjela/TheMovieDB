@@ -13,6 +13,7 @@ class UpcomingMoviesTableViewCell: UITableViewCell {
     @IBOutlet var releseDateLbl: UILabel!
     @IBOutlet var posterImage: UIImageView!
     @IBOutlet var titleLbl: UILabel!
+    @IBOutlet var ratingStarsView: CosmosView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

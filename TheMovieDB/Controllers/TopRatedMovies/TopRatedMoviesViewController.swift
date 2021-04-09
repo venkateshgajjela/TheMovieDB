@@ -39,6 +39,11 @@ extension TopRatedMoviesViewController: UITableViewDelegate, UITableViewDataSour
         if let resultDic = self.result[indexPath.row] as? NSDictionary{
             cell.titleLbl.text = "\(resultDic["original_title"] ?? "")"
             cell.dateLbl.text = "\(resultDic["release_date"] ?? "")"
+            if let rating_avarage = resultDic["vote_average"] as? Double{
+                cell.ratingView.rating = rating_avarage
+            }else{
+                cell.ratingView.rating = 0.0
+            }
             if let url = URL(string: "https://image.tmdb.org/t/p/w500\(resultDic["poster_path"] ?? "")"){
                 cell.posterImage.downloaded(from: url)
                 cell.posterImage.layer.cornerRadius = 5
