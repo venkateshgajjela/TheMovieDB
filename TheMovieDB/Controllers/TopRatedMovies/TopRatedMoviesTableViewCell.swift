@@ -15,6 +15,7 @@ class TopRatedMoviesTableViewCell: UITableViewCell {
     @IBOutlet var dateLbl: UILabel!
     
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
